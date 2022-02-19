@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table*}[htbp]
+\centering
+\caption{Frameworks and addressed challenges}
+\label{Classification table}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Framework} & \textbf{Problem} & \textbf{Solution(s)} & \textbf{Processing} & \textbf{Testbed/PoC} \\ \hline
+
+CoCo Framework \cite{meng2018coco} & Modular SFC & \begin{tabular}[c]{@{}c@{}} -Optimization of modular SFCs \\ - Effective resource allocation \\ - Resource-aware placement\\ - NF fault tolerance\\ - NF Performance optimization\\ - Optimized run-time scheduler \end{tabular} & Containers & commodity servers \\ \hline
+
+DeepNFV \cite{li2018deepnfv} & NFV SFC performance & \begin{tabular}[c]{@{}c@{}} - Deep learning for QoS and traffic optimization \\ - Lightweight containerised NFs \\ - Edge NF deployments \end{tabular} & Containers & GNF framework \\ \hline
+
+E2 Framework \cite{palkar2015e2} & NF Scheduling and management & \begin{tabular}[c]{@{}c@{}}- NF placement \\ - Effective resource allocation \\ NF scaling\\ - NF Performance optimization \end{tabular} & commodity servers & Hardware switch and servers \\ \hline
+
+Eden \cite{ballani2015enabling} & Service Provisioning and Orchestration & \begin{tabular}[c]{@{}c@{}}- End-host NFs \\ Packet offload to NIC \\ - Programmable data-plane NF \end{tabular} & F\# NFs & End-hosts and programmable NICs \\ \hline
+
+FtVNF \cite{harchol2018ftvnf} & NF fault tolerance & \begin{tabular}[c]{@{}c@{}}- Slave and Master vNFs deployment  \\ - NF failure recovery \\ - NF fault tolerance \end{tabular} & Click & Commodity servers \\ \hline
+
+HyperNF \cite{yasukata2017hypernf} & NFV SFC performance & \begin{tabular}[c]{@{}c@{}}- Reduced I/O sync overheads \\ - Hypercall-based I/O in VM context\\ - NF Scalability \end{tabular} & VM & VALE switches and VMs \\ \hline
+
+
+PiaFFE \cite{mafioletti2020piaffe} & vNF orchestration & \begin{tabular}[c]{@{}c@{}}- vNF Offloading to eNF\\ - Latency reduction \\  - improved throughput\\ - eNF placement\end{tabular} & VM & Servers with SmartNIC \\ \hline
+
+SNF Framework \cite{katsikas2016snf} & Resource optimization & \begin{tabular}[c]{@{}c@{}}- Synthesised processing graphs \\ - Reduced write operations per header field \\ - Stateful NF management\\ -NF Performance optimization \end{tabular} & Click elements & Servers with MoonGen Packet gen \\ \hline
+
+Slick \cite{anwer2015programming} & Resource management and placement & \begin{tabular}[c]{@{}c@{}}- vNF Placement \\ - Efficient traffic steering\end{tabular} & Click & Mininet/VM \\ \hline
+
+ClickOS \cite{martins2014clickos} & Middlebox optimization & \begin{tabular}[c]{@{}c@{}} - Optimized packet processing\\ - Zen-based VM optimization \\\end{tabular} & Click & Xen-based hypervisor \\ \hline
+
+GNF \cite{cziva2015container} & Edge vNF deployments & \begin{tabular}[c]{@{}c@{}} - Lightweight vNFs\\ - Edge service chains\\\end{tabular} & CN & Host with CNs \\ \hline
+
+OpenBox \cite{bremler2016openbox} & vNF provisioning and orchestration  & \begin{tabular}[c]{@{}c@{}} - Lightweight NFs\\ - Decoupling control/data plane\\\end{tabular}& Click & Mininet \\ \hline
+
+Open Baton \cite{carella2015open} & NFV/SFC management and orchestration & \begin{tabular}[c]{@{}c@{}}- Network slicing \\ - Multi-site orchestration \\ - NF fault tolerance\\ - Resource allocation \end{tabular} & VMs & OpenStack \\ \hline
+
+PhantomSFC \cite{castanho2018phantomsfc} & Resource optimization  & \begin{tabular}[c]{@{}c@{}}- Service/Control decoupling \\ - Reduced latency\\ - Improved throughput\end{tabular} & VMs & VM/DPDK \\ \hline
+
+Pishahang \cite{kouchaksaraei2018pishahang} & Service Orchestration & \begin{tabular}[c]{@{}c@{}} \\ \\ Multi-domain orchestration \\ \\ \\\end{tabular}  & VM & OpenStack/Kubernetes \\ \hline
+
+CN-SFC \cite{dab2020efficient} & Traffic Steering & \begin{tabular}[c]{@{}c@{}}- NSM \\ - Network-Aware steering\end{tabular} & Containers  & Kubernetes \\ \hline
+
+Medhat et al. \cite{medhat2016resilient} & SFC Resilience & \begin{tabular}[c]{@{}c@{}}- Runtime traffic reroute for fail-over\\ - Fault recovery\end{tabular} & VM & OpenStack/OpenDalight \\ \hline
+
+MicroNF \cite{meng2019micronf} & NFV/SFC performance & \begin{tabular}[c]{@{}c@{}}- - Optimal NF placement \\ - Reduced inter-NF latency \\ - NF Performance optimization and scalability \\ - Fair scheduling of vNFs \end{tabular} & Containers & Docker and VMs \\ \hline
+
+Nguyen et al. \cite{nguyen2019openflow} & SFC Resilience & \begin{tabular}[c]{@{}c@{}} \\ \\ - Controller-independent HA scheme  \\ \\ \\\end{tabular} & VM & OpenFlow/OpenStack \\ \hline
+
+NetBricks \cite{panda2016netbricks} & NF performance optimization & \begin{tabular}[c]{@{}c@{}}- Zero-copy isolation\\ - Memory level isolation\end{tabular} & VM & Physical servers \\ \hline
+
+NetFate \cite{lombardo2015open} & Edge NFV deployments & \begin{tabular}[c]{@{}c@{}}- Active NF/VM migration \\ - Open PaaS platform \end{tabular} & VM & Commodity servers and virtual switches \\ \hline
+
+OpenNetVM \cite{zhang2016opennetvm} & VNF performance optimization & \begin{tabular}[c]{@{}c@{}}- DPDK-enabled NFs\\ - Containerised NFs \\ - Kernel by-pass packet processing\\ - Line-rate packet processing\end{tabular} & Containers & DPDK-enabled hosts and containers \\ \hline
+
+REINFORCE \cite{kulkarni2020reinforce} & SFC failures & \begin{tabular}[c]{@{}c@{}}- Single and multiple nodes fast failure recovery\\ - Remote and local redundancy\\ - Reduced overhead\\ - Link and node failure detection\\ - NF Performance optimization \end{tabular} & Containers & Physical servers \\ \hline
+
+Hmaity et al. \cite{hmaity2016virtual} & \begin{tabular}[c]{@{}c@{}}- SFC Resilience \\ - Placement\end{tabular} & \begin{tabular}[c]{@{}c@{}}- Single Link/Node failures\\\end{tabular} & VM & Three ILP Models \\ \hline
+
+Metron \cite{katsikas2018metron} & Resource Allocation & \begin{tabular}[c]{@{}c@{}}- Network resource management\\ - Server Resource Utilization.\end{tabular} & Click-based & OpenFlow Switch and VM \\ \hline
+
+FTC \cite{ghaznavi2020fault} & SFC resilience & \begin{tabular}[c]{@{}c@{}}- Chain-wide NF fault tolerance \\ - NF state piggybacking\\ - Resource management \end{tabular} & Click & Server cluster \\ \hline
+
+MVMP \cite{zheng2018flexible} & NFV SFC performance & \begin{tabular}[c]{@{}c@{}}- improved throughput \\ - Lightweight NFs \\ - NF fault tolerance\\ - NF replication \end{tabular} & Containers & DPDK, Container, Virtual Switch \\ \hline
+\end{tabular}%
+}
+\end{table*}
+%%%%%%%%%%%%%%%%%%%%%%%%
