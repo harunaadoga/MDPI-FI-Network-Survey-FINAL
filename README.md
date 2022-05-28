@@ -1,0 +1,3 @@
+# MDPI-FI-Network-Survey-FINAL
+Survey of SFC implementation frameworks
+In this work, we review the state-of-the-art NFV and SFC implementation frameworks and present a taxonomy of the current proposals. Our taxonomy comprises three major categories based on the primary objectives of each of the surveyed frameworks: (1)~resource allocation and service orchestration, (2) performance tuning, and (3) resilience and fault recovery. We also identify some key open research challenges that require further exploration by the research community to achieve scalable, resilient, and high-performance NFV/SFC deployments in next-generation networks.
