@@ -9,7 +9,7 @@ We present a comprehensive survey of the state-of-the-art NFV frameworks for bui
 Finally, we identify and discuss the main open research challenges associated with NFV and SFC environments in the next generation networks.
 
 
-# BibTeX Reference
+# BibTeX citation
 @article{adoga2022network,
   title={Network Function Virtualization and Service Function Chaining Frameworks: A Comprehensive Review of Requirements, Objectives, Implementations, and Open Research Challenges},
   author={Adoga, Haruna Umar and Pezaros, Dimitrios P},
